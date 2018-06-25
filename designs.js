@@ -8,6 +8,7 @@ $(document).ready(function(){
 		// prevent the backend process
 		event.preventDefault();
 
+		// get values of height and width
 		let  pixHeight = $('#inputHeight').val();
 		let  pixWidth = $('#inputWidth').val();
 
@@ -25,6 +26,8 @@ $(document).ready(function(){
 const makeGrid = function(height, width){
 	//Remove all existing rows.
 	$('tr').remove();
+
+	//create grid
 	for(let row = 1; row <= height; row++){
 		$('#pixelCanvas').append('<tr></tr>');
 		for(let col = 1; col <= width; col++){
@@ -38,6 +41,7 @@ const addColor = function(){
 	$('td').click(function(){
 	const color = $('#colorPicker').val();
 
+		//effect color
 		($( this ).attr('style')) ? $( this ).removeAttr('style') : $( this ).attr('style','background-color:' + color);
 	});
 }
