@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
     <head>
         <title>Pixel Art Maker!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Spirax" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton|Nosifer">
         <link rel="stylesheet" type="text/css" href="styles.css">
@@ -14,15 +16,15 @@
 
     <body>
         <main>
-            <h1 >Lab: Pixel <span>Art Maker</span></h1>
+          <div class="heading">  <h1 >Lab: Pixel <span>Art Maker</span></h1></div>
             <hr>
             <h2>Choose Grid Size</h2>
             <form id="sizePicker">
               <label>  Grid Height: </label>
                 <input type="number" id="inputHeight" name="height" min="1" value="1"> 
-                <labe>Grid Width:</labe>
+                <label>Grid Width:</label>
                 <input type="number" id="inputWidth" name="width" min="1" value="1">
-                <input id="createGrid" type="submit">
+                <input id="createGrid" type="submit" value="Create Grid">
             </form>
 
             <h2>Pick A Color</h2>
