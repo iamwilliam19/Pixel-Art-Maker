@@ -1,7 +1,13 @@
 body {
     text-align: center;
     font-family: Spirax;
-      color: #660000;
+    color: #660000;
+}
+
+.heading{
+  width:100%;
+  height: auto;
+
 }
 
 h1 {
@@ -14,7 +20,7 @@ h1 {
 
 h2 {
     margin: 1em 0 0.25em;
-    
+
 }
 
 h2:first-of-type {
@@ -48,3 +54,54 @@ input[type=number] {
 label{
     color:#660066;
 }
+
+
+/*tabs and Notes*/
+
+@media screen and (max-width: 960px){
+    h1{
+      font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 960px){
+    h1{
+      font-size: 50px;
+      background-color: green;
+    }
+}
+
+/*Android phones*/
+@media screen and (max-width:480px){
+
+  h1{
+    font-size: 30px;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  label{
+    font-size: 12px;
+
+  }
+
+  #createGrid{
+    margin-top: 5px;
+  }
+  #colorPicker{
+    height: 20px;
+    width: 50px;
+  }
+  #inputWidth{
+    height: 15px;
+  }
+
+  #inputHeight{
+    height: 15px;
+  }
+
+
+}
+
