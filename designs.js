@@ -39,7 +39,7 @@ const makeGrid = function(height, width){
 // apply color to each cell.
 const addColor = function(){
 	$('td').click(function(){
-	const color = $('#colorPicker').val();
+	let color = $('#colorPicker').val();
 
 		//effect color
 		($( this ).attr('style')) ? $( this ).removeAttr('style') : $( this ).attr('style','background-color:' + color);
